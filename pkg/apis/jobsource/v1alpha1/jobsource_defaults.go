@@ -23,4 +23,5 @@ import (
 // SetDefaults implements apis.Defaultable
 func (js *JobSource) SetDefaults(ctx context.Context) {
 	// Nothing to default.
+	// TODO Do we need to implement apis.Defaultable?
 }

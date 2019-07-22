@@ -17,6 +17,7 @@ limitations under the License.
 package v1alpha1
 
 import (
+	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
 	"knative.dev/pkg/apis"
@@ -51,18 +52,37 @@ var _ kmeta.OwnerRefable = (*JobSource)(nil)
 
 // JobSourceSpec holds the desired state of the JobSource (from the client).
 type JobSourceSpec struct {
-	// TODO What goes here?
+	// Template describes the pods that will be created.
+	// +optional
+	Template *corev1.PodTemplateSpec `json:"template,omitempty"`
+
+	// Sink is a reference to an object that will resolve to a domain name. The
+	// JobSource will send its events to the sink.
+	// +optional
+	Sink *corev1.ObjectReference `json:"sink,omitempty"`
 }
 
 const (
 	// JobSourceConditionReady is set when the revision is starting to materialize
 	// runtime resources, and becomes true when those resources are ready.
 	JobSourceConditionReady = apis.ConditionReady
+
+	// JobSourceConditionSinkProvided is true when the JobSource has been
+	// configured with a sink.
+	JobSourceConditionSinkProvided apis.ConditionType = "SinkProvided"
+
+	// JobSourceConditionStarted is true when the JobSource has had a Job
+	// created. This is analogous to ContainerSource's
+	// ContainerConditionDeployed.
+	JobSourceConditionStarted apis.ConditionType = "Started"
 )
 
 // JobSourceStatus communicates the observed state of the JobSource (from the controller).
 type JobSourceStatus struct {
 	duckv1beta1.Status `json:",inline"`
+
+	// SinkURI is the current active sink URI configured for the TaskSource.
+	SinkURI string `json:"sinkUri,omitempty"`
 }
 
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object

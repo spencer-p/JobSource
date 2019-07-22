@@ -19,6 +19,9 @@ package v1alpha1
 import (
 	"context"
 
+	corev1 "k8s.io/api/core/v1"
+	"k8s.io/apimachinery/pkg/api/equality"
+
 	"knative.dev/pkg/apis"
 )
 
@@ -29,5 +32,8 @@ func (js *JobSource) Validate(ctx context.Context) *apis.FieldError {
 
 // Validate implements apis.Validatable
 func (jss *JobSourceSpec) Validate(ctx context.Context) *apis.FieldError {
+	if jss.Template != nil && equality.Semantic.DeepEqual(jss.Template, &corev1.PodTemplateSpec{}) {
+		return apis.ErrMissingField("template")
+	}
 	return nil
 }
