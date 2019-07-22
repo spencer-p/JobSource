@@ -28,17 +28,17 @@ func (js *JobSource) GetGroupVersionKind() schema.GroupVersionKind {
 	return SchemeGroupVersion.WithKind("JobSource")
 }
 
-func (ass *JobSourceStatus) InitializeConditions() {
-	condSet.Manage(ass).InitializeConditions()
+func (jss *JobSourceStatus) InitializeConditions() {
+	condSet.Manage(jss).InitializeConditions()
 }
 
-func (ass *JobSourceStatus) MarkServiceUnavailable(name string) {
-	condSet.Manage(ass).MarkFalse(
+func (jss *JobSourceStatus) MarkServiceUnavailable(name string) {
+	condSet.Manage(jss).MarkFalse(
 		JobSourceConditionReady,
 		"ServiceUnavailable",
 		"Service %q wasn't found.", name)
 }
 
-func (ass *JobSourceStatus) MarkServiceAvailable() {
-	condSet.Manage(ass).MarkTrue(JobSourceConditionReady)
+func (jss *JobSourceStatus) MarkServiceAvailable() {
+	condSet.Manage(jss).MarkTrue(JobSourceConditionReady)
 }
