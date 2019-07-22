@@ -1,7 +1,8 @@
-apiVersion: samples.knative.dev/v1alpha1
-kind: AddressableService
+apiVersion: jobsource.spencer-p.github.com/v1alpha1
+kind: JobSource
 metadata:
-  name: make-it-addressable
-  namespace: knative-samples
+  name: example-name
+  namespace: jobsource
+# TODO Should this webhook thing be deleted?
 spec:
   serviceName: webhook

@@ -17,9 +17,9 @@ kind: Service
 metadata:
   labels:
     role: webhook
-    samples.knative.dev/release: devel
+    spencer-p.github.com/release: devel
   name: webhook
-  namespace: knative-samples
+  namespace: jobsource
 spec:
   ports:
     - port: 443

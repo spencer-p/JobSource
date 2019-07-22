@@ -1,11 +1,10 @@
-# Knative Sample Controller
+# Knative JobSource
 
-[![GoDoc](https://godoc.org/knative.dev/sample-controller?status.svg)](https://godoc.org/knative.dev/sample-controller)
-[![Go Report Card](https://goreportcard.com/badge/knative/sample-controller)](https://goreportcard.com/report/knative/sample-controller)
+[![GoDoc](https://godoc.org/spencer-p/jobsource?status.svg)](https://godoc.org/spencer-p/jobsource)
+[![Go Report Card](https://goreportcard.com/badge/spencer-p/jobsource)](https://goreportcard.com/report/spencer-p/jobsource)
 
-Knative `sample-controller` defines a few simple resources that are validated by
-webhook and managed by a controller to demonstrate the canonical style in which
-Knative writes controllers.
+JobSource is a PodSpecable Job that runs to completion, emitting an event to
+its sink.
 
 To learn more about Knative, please visit our
 [Knative docs](https://github.com/knative/docs) repository.

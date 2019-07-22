@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4e895935-4422-4a99-a4d1-7b6ea8436939" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DEVELOPMENT.md" beforeDir="false" afterPath="$PROJECT_DIR$/DEVELOPMENT.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/controller/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/controller/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/webhook/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/webhook/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/100-namespace.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/100-namespace.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/200-clusterrole.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/200-clusterrole.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/200-serviceaccount.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/200-serviceaccount.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/201-clusterrolebinding.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/201-clusterrolebinding.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/300-addressableservice.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/300-addressableservice.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/400-webhook-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/400-webhook-service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config-logging.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/config-logging.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config-observability.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/config-observability.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/controller.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/controller.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/webhook.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/webhook.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hack/update-codegen.sh" beforeDir="false" afterPath="$PROJECT_DIR$/hack/update-codegen.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/apis/samples/register.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/apis/samples/v1alpha1/addressable_service_defaults.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/apis/samples/v1alpha1/addressable_service_lifecycle.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/apis/samples/v1alpha1/addressable_service_types.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/apis/samples/v1alpha1/addressable_service_validation.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/apis/samples/v1alpha1/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/apis/samples/v1alpha1/register.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/apis/samples/v1alpha1/register_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/apis/samples/v1alpha1/zz_generated.deepcopy.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/client/clientset/versioned/clientset.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/client/clientset/versioned/clientset.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/client/clientset/versioned/fake/clientset_generated.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/client/clientset/versioned/fake/clientset_generated.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/client/clientset/versioned/fake/register.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/client/clientset/versioned/fake/register.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/client/clientset/versioned/scheme/register.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/client/clientset/versioned/scheme/register.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/client/clientset/versioned/typed/samples/v1alpha1/addressableservice.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/client/clientset/versioned/typed/samples/v1alpha1/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/client/clientset/versioned/typed/samples/v1alpha1/fake/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/client/clientset/versioned/typed/samples/v1alpha1/fake/fake_addressableservice.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/client/clientset/versioned/typed/samples/v1alpha1/fake/fake_samples_client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/client/clientset/versioned/typed/samples/v1alpha1/generated_expansion.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/client/clientset/versioned/typed/samples/v1alpha1/samples_client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/client/informers/externalversions/factory.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/client/informers/externalversions/factory.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/client/informers/externalversions/generic.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/client/informers/externalversions/generic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/client/informers/externalversions/internalinterfaces/factory_interfaces.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/client/informers/externalversions/internalinterfaces/factory_interfaces.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/client/informers/externalversions/samples/interface.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/client/informers/externalversions/samples/v1alpha1/addressableservice.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/client/informers/externalversions/samples/v1alpha1/interface.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/client/injection/client/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/client/injection/client/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/client/injection/client/fake/fake.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/client/injection/client/fake/fake.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/client/injection/informers/samples/factory/fake/fake.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/client/injection/informers/samples/factory/samplesfactory.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/client/injection/informers/samples/v1alpha1/addressableservice/addressableservice.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/client/injection/informers/samples/v1alpha1/addressableservice/fake/fake.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/client/listers/samples/v1alpha1/addressableservice.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/client/listers/samples/v1alpha1/expansion_generated.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/reconciler/addressableservice/addressableservice.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/reconciler/jobsource/addressableservice.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/reconciler/addressableservice/controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/reconciler/jobsource/controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/code-generator/generate-groups.sh" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/code-generator/generate-groups.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/code-generator/generate-internal-groups.sh" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/code-generator/generate-internal-groups.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/code-generator/hack/update-codegen.sh" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/code-generator/hack/update-codegen.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/code-generator/hack/verify-codegen.sh" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/code-generator/hack/verify-codegen.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/knative.dev/pkg/hack/generate-knative.sh" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/knative.dev/pkg/hack/generate-knative.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/knative.dev/pkg/hack/update-codegen.sh" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/knative.dev/pkg/hack/update-codegen.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/knative.dev/pkg/hack/update-deps.sh" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/knative.dev/pkg/hack/update-deps.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/knative.dev/pkg/hack/verify-codegen.sh" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/knative.dev/pkg/hack/verify-codegen.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/knative.dev/pkg/test/presubmit-tests.sh" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/knative.dev/pkg/test/presubmit-tests.sh" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pkg/apis/jobsource/v1alpha1/register.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+              <folding>
+                <element signature="e#586#774#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pkg/apis/jobsource/v1alpha1/register_test.go">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pkg/client/clientset/versioned/clientset.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pkg/client/clientset/versioned/typed/jobsource/v1alpha1/addressableservice.go">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pkg/reconciler/jobsource/addressableservice.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1125">
+              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+              <folding>
+                <element signature="e#595#1258#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pkg/apis/jobsource/v1alpha1/jobsource_defaults.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pkg/apis/jobsource/v1alpha1/jobsource_validation.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pkg/apis/jobsource/v1alpha1/jobsource_types.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="70" column="18" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pkg/apis/jobsource/v1alpha1/doc.go">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pkg/apis/jobsource/v1alpha1/jobsource.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-375" />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>samples.</find>
+    </findStrings>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoDepProject">
+    <integration-enabled>true</integration-enabled>
+    <exec-path>/usr/bin/dep</exec-path>
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pkg/apis/spencer-p/v1alpha1/register.go" />
+        <option value="$PROJECT_DIR$/pkg/apis/jobsource/v1alpha1/register.go" />
+        <option value="$PROJECT_DIR$/pkg/apis/jobsource/register.go" />
+        <option value="$PROJECT_DIR$/pkg/reconciler/jobsource/addressableservice.go" />
+        <option value="$PROJECT_DIR$/pkg/apis/jobsource/v1alpha1/addressable_service_types.go" />
+        <option value="$PROJECT_DIR$/pkg/apis/jobsource/v1alpha1/jobsource_defaults.go" />
+        <option value="$PROJECT_DIR$/pkg/apis/jobsource/v1alpha1/jobsource_validation.go" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/jobsource.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="88" />
+    <option name="width" value="2400" />
+    <option name="height" value="1424" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="jobsource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobsource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobsource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobsource" type="462c0819:PsiDirectoryNode" />
+              <item name="pkg" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobsource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobsource" type="462c0819:PsiDirectoryNode" />
+              <item name="pkg" type="462c0819:PsiDirectoryNode" />
+              <item name="apis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobsource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobsource" type="462c0819:PsiDirectoryNode" />
+              <item name="pkg" type="462c0819:PsiDirectoryNode" />
+              <item name="apis" type="462c0819:PsiDirectoryNode" />
+              <item name="jobsource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobsource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobsource" type="462c0819:PsiDirectoryNode" />
+              <item name="pkg" type="462c0819:PsiDirectoryNode" />
+              <item name="apis" type="462c0819:PsiDirectoryNode" />
+              <item name="jobsource" type="462c0819:PsiDirectoryNode" />
+              <item name="v1alpha1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobsource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobsource" type="462c0819:PsiDirectoryNode" />
+              <item name="pkg" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobsource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobsource" type="462c0819:PsiDirectoryNode" />
+              <item name="pkg" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="clientset" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobsource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobsource" type="462c0819:PsiDirectoryNode" />
+              <item name="pkg" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="clientset" type="462c0819:PsiDirectoryNode" />
+              <item name="versioned" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobsource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobsource" type="462c0819:PsiDirectoryNode" />
+              <item name="pkg" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="clientset" type="462c0819:PsiDirectoryNode" />
+              <item name="versioned" type="462c0819:PsiDirectoryNode" />
+              <item name="typed" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobsource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobsource" type="462c0819:PsiDirectoryNode" />
+              <item name="pkg" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="clientset" type="462c0819:PsiDirectoryNode" />
+              <item name="versioned" type="462c0819:PsiDirectoryNode" />
+              <item name="typed" type="462c0819:PsiDirectoryNode" />
+              <item name="jobsource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobsource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobsource" type="462c0819:PsiDirectoryNode" />
+              <item name="pkg" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="clientset" type="462c0819:PsiDirectoryNode" />
+              <item name="versioned" type="462c0819:PsiDirectoryNode" />
+              <item name="typed" type="462c0819:PsiDirectoryNode" />
+              <item name="jobsource" type="462c0819:PsiDirectoryNode" />
+              <item name="v1alpha1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobsource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobsource" type="462c0819:PsiDirectoryNode" />
+              <item name="pkg" type="462c0819:PsiDirectoryNode" />
+              <item name="reconciler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobsource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobsource" type="462c0819:PsiDirectoryNode" />
+              <item name="pkg" type="462c0819:PsiDirectoryNode" />
+              <item name="reconciler" type="462c0819:PsiDirectoryNode" />
+              <item name="jobsource" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="88" width="2400" height="1424" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34264833" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49957007" visible="true" weight="0.2887828" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5004299" side_tool="true" visible="true" weight="0.2887828" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pkg/apis/jobsource/register.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkg/client/clientset/versioned/fake/clientset_generated.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding>
+            <element signature="e#628#1109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkg/client/clientset/versioned/fake/doc.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkg/client/clientset/versioned/fake/register.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkg/client/clientset/versioned/typed/jobsource/v1alpha1/fake/doc.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkg/client/clientset/versioned/doc.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkg/reconciler/jobsource/addressableservice.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1125">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding>
+            <element signature="e#595#1258#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkg/apis/jobsource/v1alpha1/jobsource_types.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="70" column="18" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkg/apis/jobsource/v1alpha1/doc.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkg/apis/jobsource/v1alpha1/jobsource.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-375" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkg/apis/jobsource/v1alpha1/jobsource_defaults.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkg/apis/jobsource/v1alpha1/jobsource_validation.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkg/apis/jobsource/v1alpha1/register.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+          <folding>
+            <element signature="e#586#774#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkg/apis/jobsource/v1alpha1/register_test.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkg/client/clientset/versioned/clientset.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkg/client/clientset/versioned/typed/jobsource/v1alpha1/addressableservice.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>
