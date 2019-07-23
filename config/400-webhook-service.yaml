@@ -19,7 +19,7 @@ metadata:
     role: webhook
     spencer-p.github.com/release: devel
   name: webhook
-  namespace: jobsource
+  namespace: knative-eventing
 spec:
   ports:
     - port: 443

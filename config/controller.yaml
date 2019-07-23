@@ -16,7 +16,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: controller
-  namespace: jobsource
+  namespace: knative-eventing
   labels:
     spencer-p.github.com/release: devel
 spec:

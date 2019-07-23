@@ -21,7 +21,7 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: controller
-    namespace: jobsource
+    namespace: knative-eventing
 roleRef:
   kind: ClusterRole
   name: jobsource-admin

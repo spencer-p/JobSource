@@ -16,7 +16,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: config-logging
-  namespace: jobsource
+  namespace: knative-eventing
   labels:
     spencer-p.github.com/release: devel
 

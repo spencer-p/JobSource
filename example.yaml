@@ -2,7 +2,7 @@ apiVersion: jobsource.spencer-p.github.com/v1alpha1
 kind: JobSource
 metadata:
   name: example-name
-  namespace: jobsource
+  namespace: default
 # TODO Should this webhook thing be deleted?
 spec:
   serviceName: webhook
